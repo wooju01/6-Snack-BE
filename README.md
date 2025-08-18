@@ -8,10 +8,10 @@
 ### :link: 팀 문서 
 - :green_book: [Notion 링크 바로가기](https://www.notion.so/3-Snack-2156e9d243fd81cd90e7e05503fe930b)  
 
-### 프론트엔드 Git 저장소  
+### 💻 프론트엔드 Git 저장소  
 - :wrench: [GitHub Repository 보러가기](https://github.com/De-cal/6-Snack-FE)
 
-### API 명세서
+### 📋 API 명세서
 - :receipt: [Swagger API 보러가기](https://api.5nack.site/api-docs)
 
 ## 🏗️ 프로젝트 구조
