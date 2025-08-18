@@ -1,122 +1,178 @@
-# Express TypeScript Backend Project
+# 고급 프로젝트 - 스낵(Snack)
+<img width="1107" height="380" alt="스크린샷 2025-08-18 130003" src="https://github.com/user-attachments/assets/1b33e7da-435f-47bd-bb99-1a0faf7e91b3" />
 
-이 프로젝트는 Express, TypeScript, Swagger, MVC 패턴, 그리고 Prisma를 사용하여 구축된 백엔드 애플리케이션입니다.
+## 📝 목차
 
-## 🚀 프로젝트 시작하기
+### 📌 Quick Navigation
+- 🔹 [**프로젝트 소개**](#project-introduction)
+- 🔹 [**기능 구현 영상**](#feature-demo-video)
+- 🔹 [**팀원 소개**](#team-members)
+- 🔹 [**시스템 아키텍쳐**](#system-architecture)
+- 🔹 [**기술 스택**](#tech-stack)
+- 🔹 [**프로젝트 기능**](#project-features)
+- 🔹 [**트러블 슈팅**](#troubleshooting)
+<br></br>
+<a name="project-introduction"></a>
+## 📑 프로젝트 소개
 
-### 1. 프로젝트 초기 설정
 
-다음 명령어를 순서대로 실행하여 프로젝트를 초기화하고 필요한 의존성을 설치합니다.
+<br></br>
+<a name="feature-demo-video"></a>
 
+## 🏗️ 프로젝트 구조
+
+<details>
+  <summary>프로젝트 구조 열기</summary>
 ```
-# 1. 프로젝트 폴더 생성 및 이동
-mkdir express-typescript-backend
-cd express-typescript-backend
-
-# 2. npm 프로젝트 초기화
-npm init -y
-
-# 3. Express 및 TypeScript 관련 패키지 설치
-npm install express typescript
-npm install -D @types/express @types/node ts-node nodemon
-
-# 4. TypeScript 설정 파일 (tsconfig.json) 생성
-npx tsc --init
-
-# 5. 환경 변수 관리를 위한 dotenv 패키지 설치
-npm install dotenv
-
-# 6. Swagger (API 문서화) 관련 패키지 설치
-npm install swagger-ui-express swagger-jsdoc
-npm install -D @types/swagger-ui-express @types/swagger-jsdoc
-
-# 7. Prisma ORM 관련 패키지 설치
-npm install prisma @prisma/client
-npm install -D prisma
-
-# 8. Prisma 초기화 (prisma 폴더 및 schema.prisma 파일 생성)
-npx prisma init
-
-# 9. Prisma Client 생성 (schema.prisma 기반으로 타입 정의 및 클라이언트 코드 생성)
-# 이 명령은 schema.prisma 파일이 변경될 때마다 다시 실행해야 합니다.
-npx prisma generate
-
+src/
+├── controllers/          # 요청 처리 및 응답 반환
+├── services/            # 비즈니스 로직 처리
+├── repositories/        # 데이터 접근 계층 (Prisma)
+├── routes/              # API 라우팅 정의
+├── middlewares/         # 미들웨어 (인증, 에러 처리 등)
+├── dtos/                # 데이터 전송 객체
+├── types/               # TypeScript 타입 정의
+├── config/              # 설정 파일 (Swagger 등)
+├── utils/               # 유틸리티 함수 (S3, 날짜 처리 등)
+├── cron/                # 정기 작업 스케줄러 (월별 예산 자동 생성)
+├── lib/                 # 외부 라이브러리 설정 (Prisma 등)
+├── test/                # 단위 테스트
+└── integration-test/    # 통합 테스트
 ```
+</details>
 
-### 2. 환경 변수 설정
 
-프로젝트 루트에 `.env` 파일을 생성하고 다음 내용을 추가합니다. (DB URL은 나중에 실제 값으로 변경해야 합니다.)
+<br></br>
+<a name="feature-demo-video"></a>
 
-```
-# .env (프로젝트 루트에 생성)
+## 📱 기능 구현 영상
+- GIF 움짤을 추가하세요
+- 유튜브 공유 링크를 추가하세요
 
-# 서버 포트
-PORT=3000
+<br></br>
+<a name="team-members"></a>
+## 👨‍👩‍👧‍👦 Team Members
+<table align="center">
+  <tbody>
+    <tr>
+      <th>Team Leader</th>
+      <th>Deputy Team Leader</th>
+      <th>Team Member</th>
+      <th>Team Member</th>
+      <th>Team Member</th>
+      <th>Team Member</th>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/De-cal">
+          <img src="https://avatars.githubusercontent.com/u/194280696?v=4" width="100px" alt="이태빈 GitHub"/>
+          <br />
+          <sub><b>이태빈</b></sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/Jam1eL1">
+          <img src="https://avatars.githubusercontent.com/u/53666518?v=4" width="100px" alt="이지수 GitHub"/>
+          <br />
+          <sub><b>이지수</b></sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/wooju01">
+          <img src="https://github.com/wooju01.png?size=100" width="100px" alt="김우주 GitHub"/>
+          <br />
+          <sub><b>김우주</b></sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/rakaso598">
+          <img src="https://avatars.githubusercontent.com/u/112613372?v=4" width="100px" alt="김홍 GitHub"/>
+          <br />
+          <sub><b>김홍섭</b></sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/xdnjs7">
+          <img src="https://github.com/xdnjs7.png?size=100" width="100px" alt="장원빈 GitHub"/>
+          <br />
+          <sub><b>장원빈</b></sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/JJOBO">
+          <img src="https://avatars.githubusercontent.com/u/194863819?v=4" width="100px" alt="조성빈 GitHub"/>
+          <br />
+          <sub><b>조성빈</b></sub>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-# 데이터베이스 URL (Prisma에서 사용)
-DATABASE_URL="postgresql://user:password@localhost:5432/mydb?schema=public"
+<br></br>
+<a name="system-architecture"></a>
+## 🚧 백엔드 시스템 아키텍쳐
 
-# JWT 비밀 키 (예시)
-JWT_SECRET="your_jwt_secret_key"
+<br></br>
+<a name="tech-stack"></a>
+## ⚙️ 기술 스택
 
-```
+#### **Backend Framework & Language**
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/ko/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![Prisma](https://img.shields.io/badge/Prisma-5A67D8?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![Nodemailer](https://img.shields.io/badge/Nodemailer-404D59?style=for-the-badge&logo=nodemailer&logoColor=white)](https://nodemailer.com/)
+[![Multer](https://img.shields.io/badge/Multer-white?style=for-the-badge)](https://github.com/expressjs/multer)
+[![Multer-S3](https://img.shields.io/badge/Multer--S3-orange?style=for-the-badge)](https://www.npmjs.com/package/multer-s3)
 
-**⚠️ 중요:** `.env` 파일은 민감한 정보를 포함하므로, **절대 Git 저장소에 커밋하지 않도록** `.gitignore`에 `.env`를 추가했는지 확인하세요.
+#### **Database & Caching**
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/)
+[![Date-fns](https://img.shields.io/badge/date--fns-gray?style=for-the-badge)](https://date-fns.org/)
+[![Date-fns-tz](https://img.shields.io/badge/date--fns--tz-gray?style=for-the-badge)](https://www.npmjs.com/package/date-fns-tz)
 
-### 3. 데이터베이스 마이그레이션 (DB URL 설정 후)
+#### **Authentication & Security**
+[![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white)](https://jwt.io/)
+[![Bcrypt](https://img.shields.io/badge/Bcrypt-white?style=for-the-badge)](https://www.npmjs.com/package/bcrypt)
+[![Helmet](https://img.shields.io/badge/Helmet-white?style=for-the-badge)](https://www.npmjs.com/package/helmet)
+[![CORS](https://img.shields.io/badge/CORS-white?style=for-the-badge)](https://www.npmjs.com/package/cors)
+[![Cookie Parser](https://img.shields.io/badge/Cookie--Parser-white?style=for-the-badge)](https://www.npmjs.com/package/cookie-parser)
 
-`DATABASE_URL`이 실제 데이터베이스에 연결될 수 있도록 설정된 후, 다음 명령어를 실행하여 데이터베이스 스키마를 적용합니다.
+#### **API Documentation**
+[![Swagger](https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)](https://swagger.io/)
+[![OpenAPI](https://img.shields.io/badge/OpenAPI-6BA542?style=for-the-badge&logo=openapi-initiative&logoColor=white)](https://openapis.org/)
 
-```
-npx prisma migrate dev --name init
+#### **Testing & Quality**
+[![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)](https://jestjs.io/)
+[![Supertest](https://img.shields.io/badge/Supertest-blue?style=for-the-badge)](https://www.npmjs.com/package/supertest)
+[![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white)](https://prettier.io/)
+[![ts-jest](https://img.shields.io/badge/ts--jest-white?style=for-the-badge)](https://kulshekhar.github.io/ts-jest/)
+[![ts-node](https://img.shields.io/badge/ts--node-white?style=for-the-badge)](https://www.npmjs.com/package/ts-node)
+[![ts-node-dev](https://img.shields.io/badge/ts--node--dev-white?style=for-the-badge)](https://www.npmjs.com/package/ts-node-dev)
+[![Nodemon](https://img.shields.io/badge/Nodemon-76D398?style=for-the-badge&logo=nodemon&logoColor=white)](https://nodemon.io/)
 
-```
+#### **Deployment & Monitoring**
+[![AWS S3](https://img.shields.io/badge/AWS%20S3-569A31?style=for-the-badge&logo=amazon-s3&logoColor=white)](https://aws.amazon.com/s3/)
+[![Sentry](https://img.shields.io/badge/Sentry-362D59?style=for-the-badge&logo=sentry&logoColor=white)](https://sentry.io/)
+[![Node-cron](https://img.shields.io/badge/Node--cron-white?style=for-the-badge)](https://www.npmjs.com/package/node-cron)
+[![Morgan](https://img.shields.io/badge/Morgan-yellowgreen?style=for-the-badge)](https://www.npmjs.com/package/morgan)
+[![Axios](https://img.shields.io/badge/Axios-black?style=for-the-badge)](https://axios-http.com/)
+[![Dotenv-cli](https://img.shields.io/badge/Dotenv--cli-white?style=for-the-badge)](https://www.npmjs.com/package/dotenv-cli)
 
-### 4. 프로젝트 실행
+<br></br>
+<a name="project-features"></a>
+## 🕹️ 프로젝트 기능
 
-#### 개발 모드
+- 사용자 인증 및 권한 관리 (JWT 기반)
+- 기업별 예산 관리 및 지출 추적
+- 상품 카테고리 관리 및 검색
+- 장바구니 및 주문 시스템
+- 즐겨찾기 및 추천 시스템
+- 결제 연동 및 주문 처리
+- 이메일 서비스 (주문 확인, 초대장, 비밀번호 재설정)
+- 관리자 대시보드 및 통계
 
-```
-npm run dev
-
-```
-
-개발 서버가 `http://localhost:3000`에서 실행됩니다.
-Swagger API 문서는 `http://localhost:3000/api-docs`에서 확인할 수 있습니다.
-
-#### 프로덕션 빌드 및 실행
-
-```
-npm run build
-npm start
-
-```
-
-## 📂 프로젝트 구조
-
-```
-express-typescript-backend/
-├── node_modules/
-├── prisma/
-│   └── schema.prisma
-├── src/
-│   ├── app.ts
-│   ├── config/
-│   │   └── swagger.ts
-│   ├── controllers/    # 요청 처리 및 응답 반환
-│   │   └── userController.ts
-│   ├── routes/         # 라우팅 정의
-│   │   ├── index.ts
-│   │   └── userRoutes.ts
-│   ├── services/       # 비즈니스 로직 처리
-│   │   └── userService.ts
-│   ├── repositories/   # 데이터 접근 로직 (Prisma 사용)
-│   │   └── userRepository.ts
-│   └── utils/
-│       └── prisma.ts   # Prisma Client 싱글톤 관리
-├── .env                  # 로컬 환경 변수 (Git에 올리지 않음)
-├── .gitignore
-├── package.json
-├── tsconfig.json
-└── yarn.lock (or package-lock.json)
-```
+<br></br>
+## 💣 트러블 슈팅
+<a name="troubleshooting"></a>
