@@ -113,7 +113,12 @@ src/
 
 ## ⚙️ 기술 스택
 
+<details>
+  <summary>BE 기술 스택 한눈에 보기</summary>
+  
 <img width="1076" height="565" alt="image" src="https://github.com/user-attachments/assets/d2a8c502-9d99-4c6f-a6e5-8bef6e336e11" />
+  
+</details>
 
 #### **Backend Framework & Language**
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/ko/)
