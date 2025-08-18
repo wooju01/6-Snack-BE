@@ -99,7 +99,9 @@ src/
 
 ## 🚧 시스템 아키텍쳐
 
-<img width="556" height="620" alt="image" src="https://github.com/user-attachments/assets/fc8a6d51-ea1c-48b5-9485-9b10d3a4584f" />
+<p align="center">
+  <img width="556" height="620" alt="image" src="https://github.com/user-attachments/assets/fc8a6d51-ea1c-48b5-9485-9b10d3a4584f" />
+</p>
 
 ## ⚙️ 기술 스택
 
