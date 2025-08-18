@@ -1,4 +1,4 @@
-# 고급 프로젝트 - 스낵(Snack)
+# Snack(스낵) - 원스톱 구매 내역 관리 서비스
 <img width="1107" height="380" alt="스크린샷 2025-08-18 130003" src="https://github.com/user-attachments/assets/1b33e7da-435f-47bd-bb99-1a0faf7e91b3" />
 
 ## 📑 프로젝트 소개
@@ -37,7 +37,6 @@ src/
 
 ## 📱 기능 구현 영상
 - GIF 움짤을 추가하세요
-- 유튜브 공유 링크를 추가하세요
 
 ## 👨‍👩‍👧‍👦 Team Members
 <table align="center">
