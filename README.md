@@ -5,7 +5,7 @@
 
 - Snack은 여러 플랫폼에서 구매한 간식 내역을 한곳에 모아 관리할 수 있는 원스톱 간식 관리 서비스입니다.
 
-### :link: 팀 문서 
+### 🔗 팀 문서 
 - :green_book: [Notion 링크 바로가기](https://www.notion.so/3-Snack-2156e9d243fd81cd90e7e05503fe930b)  
 
 ### 💻 프론트엔드 Git 저장소  
