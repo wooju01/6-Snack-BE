@@ -22,7 +22,7 @@
 <a name="api-docs"></a>
 ## 📋 API 명세서
 
-<img width="380" height="901" alt="image" src="https://github.com/user-attachments/assets/4e4c9b20-dddb-4da3-b87d-5fc227efae87" />
+<img width="381" height="352" alt="image" src="https://github.com/user-attachments/assets/5122a8ee-a292-4392-b8a6-be5aeb2f3f3b" />
 
 - [https://api.5nack.site/api-docs](https://api.5nack.site/api-docs)
 
