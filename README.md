@@ -237,7 +237,7 @@ src/
 
 ## 💣 트러블 슈팅(Backend)
 
-### **주문 상품 데이터 무결성 문제 해결**
+### **백엔드 - 장바구니와 주문 기록의 분리를 통한 결제 시스템 안정화**
 
 <img width="1106" height="589" alt="image" src="https://github.com/user-attachments/assets/5f50ef9d-1a3d-40ad-9236-d74e04c8c873" />
 
