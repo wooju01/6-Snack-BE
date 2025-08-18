@@ -1,22 +1,20 @@
 # 고급 프로젝트 - 스낵(Snack)
 <img width="1107" height="380" alt="스크린샷 2025-08-18 130003" src="https://github.com/user-attachments/assets/1b33e7da-435f-47bd-bb99-1a0faf7e91b3" />
 
-## 📝 목차
-
-### 📌 Quick Navigation
-- [**프로젝트 소개**](#project-introduction)
-- [**API 명세서**](#api-docs)
-- [**기능 구현 영상**](#feature-demo-video)
-- [**팀원 소개**](#team-members)
-- [**시스템 아키텍쳐**](#system-architecture)
-- [**기술 스택**](#tech-stack)
-- [**프로젝트 기능**](#project-features)
-- [**트러블 슈팅**](#troubleshooting)
-<br></br>
 <a name="project-introduction"></a>
 ## 📑 프로젝트 소개
 
 - Snack은 여러 플랫폼에서 구매한 간식 내역을 한곳에 모아 관리할 수 있는 원스톱 간식 관리 서비스입니다.
+
+<br></br>
+### :link: 팀 문서 
+- :green_book: [Notion 링크 바로가기](https://www.notion.so/3-Snack-2156e9d243fd81cd90e7e05503fe930b)  
+
+### 백엔드 Git 저장소  
+- :wrench: [GitHub Repository 보러가기](https://github.com/De-cal/6-Snack-BE)
+
+### API 명세서
+- :receipt: [Swagger API 보러가기](https://api.5nack.site/api-docs)
 
 <br></br>
 <a name="api-docs"></a>
