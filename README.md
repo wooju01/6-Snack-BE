@@ -1,7 +1,6 @@
 # 고급 프로젝트 - 스낵(Snack)
 <img width="1107" height="380" alt="스크린샷 2025-08-18 130003" src="https://github.com/user-attachments/assets/1b33e7da-435f-47bd-bb99-1a0faf7e91b3" />
 
-<a name="project-introduction"></a>
 ## 📑 프로젝트 소개
 
 - Snack은 여러 플랫폼에서 구매한 간식 내역을 한곳에 모아 관리할 수 있는 원스톱 간식 관리 서비스입니다.
@@ -16,8 +15,6 @@
 ### API 명세서
 - :receipt: [Swagger API 보러가기](https://api.5nack.site/api-docs)
 
-<br></br>
-<a name="api-docs"></a>
 ## 📋 API 명세서
 
 [<img width="381" height="352" alt="image" src="https://github.com/user-attachments/assets/5122a8ee-a292-4392-b8a6-be5aeb2f3f3b" />](https://api.5nack.site/api-docs)
@@ -48,16 +45,10 @@ src/
   
 </details>
 
-
-<br></br>
-<a name="feature-demo-video"></a>
-
 ## 📱 기능 구현 영상
 - GIF 움짤을 추가하세요
 - 유튜브 공유 링크를 추가하세요
 
-<br></br>
-<a name="team-members"></a>
 ## 👨‍👩‍👧‍👦 Team Members
 <table align="center">
   <tbody>
@@ -116,14 +107,10 @@ src/
   </tbody>
 </table>
 
-<br></br>
-<a name="system-architecture"></a>
 ## 🚧 시스템 아키텍쳐
 
 <img width="556" height="620" alt="image" src="https://github.com/user-attachments/assets/fc8a6d51-ea1c-48b5-9485-9b10d3a4584f" />
 
-<br></br>
-<a name="tech-stack"></a>
 ## ⚙️ 기술 스택
 
 <img width="1076" height="565" alt="image" src="https://github.com/user-attachments/assets/d2a8c502-9d99-4c6f-a6e5-8bef6e336e11" />
@@ -171,8 +158,6 @@ src/
 [![Axios](https://img.shields.io/badge/Axios-black?style=for-the-badge)](https://axios-http.com/)
 [![Dotenv-cli](https://img.shields.io/badge/Dotenv--cli-white?style=for-the-badge)](https://www.npmjs.com/package/dotenv-cli)
 
-<br></br>
-<a name="project-features"></a>
 ## 🕹️ 프로젝트 기능
 
 - 사용자 인증 및 권한 관리 (JWT 기반)
@@ -184,6 +169,5 @@ src/
 - 이메일 서비스 (주문 확인, 초대장, 비밀번호 재설정)
 - 관리자 대시보드 및 통계
 
-<br></br>
 ## 💣 트러블 슈팅
-<a name="troubleshooting"></a>
+- 트러블 슈팅 작성
