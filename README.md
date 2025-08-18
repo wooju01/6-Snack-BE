@@ -14,7 +14,7 @@
 ## 🏗️ 프로젝트 구조
 
 <details>
-  <summary>프로젝트 구조 열기</summary>
+  <summary>프로젝트 구조 보기</summary>
   
 ```
 src/
@@ -98,9 +98,14 @@ src/
 
 ## 🚧 시스템 아키텍쳐
 
-<p align="center">
-  <img width="596" height="609" alt="image" src="https://github.com/user-attachments/assets/821bee5c-7363-4af1-ba2c-eaedb85c02c4" />
-</p>
+<details>
+  <summary>시스템 아키텍쳐 보기</summary>
+  
+  <p align="center">
+    <img width="596" height="609" alt="image" src="https://github.com/user-attachments/assets/821bee5c-7363-4af1-ba2c-eaedb85c02c4" />
+  </p>
+  
+</details>
 
 ## ⚙️ 기술 스택
 
