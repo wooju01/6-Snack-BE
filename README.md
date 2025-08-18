@@ -5,11 +5,11 @@
 
 - Snack은 여러 플랫폼에서 구매한 간식 내역을 한곳에 모아 관리할 수 있는 원스톱 간식 관리 서비스입니다.
 
-- 팀 문서: [Notion 링크 바로가기](https://www.notion.so/3-Snack-2156e9d243fd81cd90e7e05503fe930b)  
+- **팀 문서**: [Notion 링크 바로가기](https://www.notion.so/3-Snack-2156e9d243fd81cd90e7e05503fe930b)  
 
-- 프론트엔드 Git 저장소: [GitHub Repository 보러가기](https://github.com/De-cal/6-Snack-FE)
+- **프론트엔드 Git 저장소**: [GitHub Repository 바로가기](https://github.com/De-cal/6-Snack-FE)
 
-- API 명세서:  [Swagger API 보러가기](https://api.5nack.site/api-docs)
+- **API 명세서**:  [Swagger API 바로가기](https://api.5nack.site/api-docs)
 
 ## 🏗️ 프로젝트 구조
 
