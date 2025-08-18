@@ -4,25 +4,33 @@
 ## 📝 목차
 
 ### 📌 Quick Navigation
-- 🔹 [**프로젝트 소개**](#project-introduction)
-- 🔹 [**기능 구현 영상**](#feature-demo-video)
-- 🔹 [**팀원 소개**](#team-members)
-- 🔹 [**시스템 아키텍쳐**](#system-architecture)
-- 🔹 [**기술 스택**](#tech-stack)
-- 🔹 [**프로젝트 기능**](#project-features)
-- 🔹 [**트러블 슈팅**](#troubleshooting)
+- [**프로젝트 소개**](#project-introduction)
+- [**API 명세서**](#api-docs)
+- [**기능 구현 영상**](#feature-demo-video)
+- [**팀원 소개**](#team-members)
+- [**시스템 아키텍쳐**](#system-architecture)
+- [**기술 스택**](#tech-stack)
+- [**프로젝트 기능**](#project-features)
+- [**트러블 슈팅**](#troubleshooting)
 <br></br>
 <a name="project-introduction"></a>
 ## 📑 프로젝트 소개
 
+- Snack은 여러 플랫폼에서 구매한 간식 내역을 한곳에 모아 관리할 수 있는 원스톱 간식 관리 서비스입니다.
 
 <br></br>
-<a name="feature-demo-video"></a>
+<a name="api-docs"></a>
+## 📋 API 명세서
+
+<img width="380" height="901" alt="image" src="https://github.com/user-attachments/assets/4e4c9b20-dddb-4da3-b87d-5fc227efae87" />
+
+- [https://api.5nack.site/api-docs](https://api.5nack.site/api-docs)
 
 ## 🏗️ 프로젝트 구조
 
 <details>
   <summary>프로젝트 구조 열기</summary>
+  
 ```
 src/
 ├── controllers/          # 요청 처리 및 응답 반환
@@ -39,6 +47,7 @@ src/
 ├── test/                # 단위 테스트
 └── integration-test/    # 통합 테스트
 ```
+  
 </details>
 
 
@@ -111,11 +120,15 @@ src/
 
 <br></br>
 <a name="system-architecture"></a>
-## 🚧 백엔드 시스템 아키텍쳐
+## 🚧 시스템 아키텍쳐
+
+<img width="556" height="620" alt="image" src="https://github.com/user-attachments/assets/fc8a6d51-ea1c-48b5-9485-9b10d3a4584f" />
 
 <br></br>
 <a name="tech-stack"></a>
 ## ⚙️ 기술 스택
+
+<img width="1076" height="565" alt="image" src="https://github.com/user-attachments/assets/d2a8c502-9d99-4c6f-a6e5-8bef6e336e11" />
 
 #### **Backend Framework & Language**
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/ko/)
