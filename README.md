@@ -156,7 +156,7 @@ src/
 [![Axios](https://img.shields.io/badge/Axios-black?style=for-the-badge)](https://axios-http.com/)
 [![Dotenv-cli](https://img.shields.io/badge/Dotenv--cli-white?style=for-the-badge)](https://www.npmjs.com/package/dotenv-cli)
 
-## 🕹️ 프로젝트 기능
+## ✨ 주요 기능
 
 <details>
   <summary>1. 인증 및 사용자 관리</summary>
