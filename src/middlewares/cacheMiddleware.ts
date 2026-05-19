@@ -2,11 +2,13 @@ import Redis from "ioredis";
 import "dotenv/config";
 import { Request, Response, NextFunction } from "express";
 
-// Redis 클라이언트 생성
-const redis = new Redis({
-  host: process.env.NODE_ENV === "production" ? process.env.REDIS_HOST : "127.0.0.1",
-  port: 6379,
-});
+// Redis 클라이언트 생성 (Upstash: REDIS_URL, 로컬: REDIS_HOST)
+const redis = process.env.REDIS_URL
+  ? new Redis(process.env.REDIS_URL)
+  : new Redis({
+      host: process.env.NODE_ENV === "production" ? process.env.REDIS_HOST : "127.0.0.1",
+      port: 6379,
+    });
 
 // 연결 상태 모니터링
 redis.on("connect", () => {
