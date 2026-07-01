@@ -276,6 +276,10 @@ const login = async (req: Request, res: Response, next: NextFunction) => {
     console.log(`[로그인 성공] 사용자: ${user.email} (${user.role}), 회사: ${user.company.name})`);
     res.status(200).json({
       message: "로그인이 성공적으로 처리되었습니다.",
+      accessToken,
+      refreshToken,
+      accessTokenExpires: accessTokenExpires.toISOString(),
+      refreshTokenExpires: refreshTokenExpires.toISOString(),
       user: {
         id: user.id,
         email: user.email,
