@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: snack-backend
+    env: node
+    region: singapore
+    plan: free
+    buildCommand: npm install && npm run build && npx prisma generate
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 8080
