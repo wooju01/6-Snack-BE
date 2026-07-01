@@ -256,12 +256,12 @@ const login = async (req: Request, res: Response, next: NextFunction) => {
     const accessTokenExpires = new Date(Date.now() + 60 * 60 * 1000);
     const refreshTokenExpires = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
     const isProduction = process.env.NODE_ENV === "production";
-    const cookieDomain = isProduction ? ".5nack.site" : undefined;
+    const cookieDomain = undefined;
     res.cookie("accessToken", accessToken, {
       httpOnly: true,
       domain: cookieDomain,
       secure: isProduction,
-      sameSite: "lax",
+      sameSite: "none",
       expires: accessTokenExpires,
       path: "/",
     });
@@ -269,7 +269,7 @@ const login = async (req: Request, res: Response, next: NextFunction) => {
       httpOnly: true,
       domain: cookieDomain,
       secure: isProduction,
-      sameSite: "lax",
+      sameSite: "none",
       expires: refreshTokenExpires,
       path: "/",
     });
@@ -329,12 +329,12 @@ const refreshToken = async (req: Request, res: Response, next: NextFunction) => 
     const newAccessTokenExpires = new Date(Date.now() + 15 * 60 * 1000);
     const newRefreshTokenExpires = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
     const isProduction = process.env.NODE_ENV === "production";
-    const cookieDomain = isProduction ? ".5nack.site" : undefined;
+    const cookieDomain = undefined;
     res.cookie("accessToken", newAccessToken, {
       httpOnly: true,
       domain: cookieDomain,
       secure: isProduction,
-      sameSite: "lax",
+      sameSite: "none",
       expires: newAccessTokenExpires,
       path: "/",
     });
@@ -342,7 +342,7 @@ const refreshToken = async (req: Request, res: Response, next: NextFunction) => 
       httpOnly: true,
       domain: cookieDomain,
       secure: isProduction,
-      sameSite: "lax",
+      sameSite: "none",
       expires: newRefreshTokenExpires,
       path: "/",
     });
@@ -381,19 +381,19 @@ const logout = async (req: Request, res: Response, next: NextFunction) => {
     }
     await authService.logout(req.user.id);
     const isProduction = process.env.NODE_ENV === "production";
-    const cookieDomain = isProduction ? ".5nack.site" : undefined;
+    const cookieDomain = undefined;
     res.clearCookie("accessToken", {
       httpOnly: true,
       domain: cookieDomain,
       secure: isProduction,
-      sameSite: "lax",
+      sameSite: "none",
       path: "/",
     });
     res.clearCookie("refreshToken", {
       httpOnly: true,
       domain: cookieDomain,
       secure: isProduction,
-      sameSite: "lax",
+      sameSite: "none",
       path: "/",
     });
     console.log(`[로그아웃 성공] 사용자: ${req.user.email}`);
